@@ -1,0 +1,9 @@
+.customModal :global(.ant-modal-content) {
+    border-radius: 0px;
+    padding: 50px 45px 15px 35px;
+}
+
+.buttonCustom {
+    position: relative;
+    margin-bottom: 35px;
+}

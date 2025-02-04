@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --primary: #1890ff;
+    --green: #00b96b;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+/* css global */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: unset;
+    overscroll-behavior: auto !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: unset;
+    /*font-family: var(--font-poppins);*/
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+.center-spin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.center-spin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.custom-input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid var(--primary);
+}
+
+.custom-input:focus {
+    border: none !important;
+}
+
+.link-no-decoration-nav {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* hover underline text*/
+.underline-text {
+    transition: text-decoration 0.3s ease;
+}
+
+.underline-text:hover {
+    cursor: pointer;
+    text-decoration: underline !important;
+}
+
+
+/* tag custom */
+.custom-tag-select {
+    line-height: 30px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    margin-inline-end: 4px;
+    white-space: nowrap;
+}
+
+.custom-tag {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+
+

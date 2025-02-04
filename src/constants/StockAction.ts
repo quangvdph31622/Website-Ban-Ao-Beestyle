@@ -1,0 +1,4 @@
+export const STOCK_ACTION = {
+    PLUS_STOCK: "PLUS_STOCK",
+    MINUS_STOCK: "MINUS_STOCK",
+}

@@ -1,0 +1,28 @@
+.color-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.color-item {
+    margin-right: 10px;
+}
+
+.color-link:hover {
+    transform: scale(1.1);
+}
+
+.size-variant {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.size-variant:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}

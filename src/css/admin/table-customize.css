@@ -1,0 +1,16 @@
+.ant-table, .ant-table-thead > tr > th{
+    border-radius: 0 !important;
+}
+.ant-table-header {
+    border-radius: 0 !important;
+}
+
+.ant-table-thead .ant-table-cell {
+    background-color: #BAE0FF !important;
+}
+
+.editable-row .ant-form-item-explain {
+    position: absolute;
+    top: 100%;
+    font-size: 12px;
+}

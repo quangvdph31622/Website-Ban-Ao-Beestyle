@@ -1,0 +1,46 @@
+import {Checkbox, Col, Collapse, GetProp, Radio, RadioChangeEvent, Row, Space, Typography} from "antd";
+import { STATUS } from "@/constants/Status";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import React, {memo, useEffect, useState} from "react";
+import StatusFilter from "@/components/Filter/StatusFilter";
+
+const { Title } = Typography;
+
+interface IProps {
+    error?: Error;
+}
+
+const ColorFilter = (props: IProps) => {
+    const [isErrorNetWork, setErrorNetWork] = useState(false);
+    const searchParams = useSearchParams();
+    const pathname = usePathname();
+    const { replace } = useRouter();
+    const { error } = props;
+
+    useEffect(() => {
+        if (error) setErrorNetWork(true);
+        else setErrorNetWork(false);
+    }, [error]);
+
+    const onChange = (e: RadioChangeEvent) => {
+        const params = new URLSearchParams(searchParams);
+        const value = e.target.value;
+        if (value) {
+            params.set("status", value);
+            params.set("page", "1");
+        } else {
+            params.delete("status");
+        }
+        replace(`${pathname}?${params.toString()}`);
+    };
+
+    return (
+        <Space direction="vertical" style={{ minWidth: 256 }}>
+            <StatusFilter
+                onChange={onChange}
+                disabled={isErrorNetWork}
+            />
+        </Space>
+    );
+};
+export default memo(ColorFilter);

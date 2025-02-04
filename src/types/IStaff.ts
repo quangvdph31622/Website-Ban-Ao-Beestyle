@@ -1,0 +1,16 @@
+interface IStaff {
+    id: number,
+    avatar: string,
+    username: string,
+    fullName: string,
+    password: string,
+    dateOfBirth?: Date ,
+    gender: string,
+    phoneNumber: string,
+    email: string,
+    status: number,
+    address: string,
+    roles: string,
+    createdAt?: string,
+    updatedAt?: string,
+}

@@ -1,0 +1,51 @@
+.container-tag-price {
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.tag-price-item {
+    width: 100%;
+    padding: 8px 20px;
+    font-size: 16px;
+    color: #000000;
+    border: 1px solid #d9d9d9;
+    background-color: #ffffff;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tag-price-item:hover {
+    background-color: #E6F4FF !important;
+    border: 1px solid #8FC8FC;
+}
+
+.ant-tag-checkable-checked.tag-price-item {
+    background-color: #1677ff !important;
+    color: #ffffff;
+    border-color: #1677ff;
+}
+
+/* animation view admin-counter-sale product list view sử dụng với thư viện react-transition-group*/
+.fade-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+.fade-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+.fade-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}

@@ -1,0 +1,124 @@
+.cartHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.cartTitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.shippingProgress {
+    padding-bottom: 5px;
+}
+
+.shippingText {
+    margin-bottom: 12px;
+}
+
+.amountNeeded {
+    color: #ff4d4f;
+    font-weight: 500;
+}
+
+.cartItem {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    gap: 16px;
+}
+
+.itemImage {
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+}
+
+.itemInfo {
+    flex: 1;
+    padding-left: 5px;
+}
+
+.itemTitle {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.itemVariant {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.itemPrice {
+    font-weight: 500;
+}
+
+.salePrice {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.quantityControl {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+.cartFooter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px 24px;
+    background: white;
+    border-top: 1px solid #f0f0f0;
+}
+
+.totalAmount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.totalLabel {
+    font-size: 16px;
+}
+
+.totalValue {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff4d4f;
+}
+
+.checkoutButton {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkoutButton:hover {
+    background-color: #f7941d !important;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.footerLink {
+    color: #1890ff !important;
+}
